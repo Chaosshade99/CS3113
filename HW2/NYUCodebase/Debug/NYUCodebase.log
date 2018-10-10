@@ -1,0 +1,20 @@
+﻿  main.cpp
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(96): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(97): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(123): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(126): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(132): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(135): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(141): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(144): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(151): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(154): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(181): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(189): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(206): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(206): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(223): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(223): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(242): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw2\nyucodebase\main.cpp(242): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  NYUCodebase.vcxproj -> C:\Users\chaos_000\Desktop\CS3113-1\project_template\Windows\HW2\Debug\NYUCodebase.exe
