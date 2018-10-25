@@ -1,9 +1,20 @@
 ﻿  main.cpp
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(163): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(196): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(197): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(340): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(343): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(357): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(360): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(145): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(146): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(234): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(337): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(355): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(361): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(366): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(371): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(372): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(379): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(380): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(382): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(414): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(417): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(425): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(441): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(444): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\desktop\cs3113-1\project_template\windows\hw3\nyucodebase\main.cpp(517): warning C4018: '<': signed/unsigned mismatch
   NYUCodebase.vcxproj -> C:\Users\chaos_000\Desktop\CS3113-1\project_template\Windows\HW3\Debug\NYUCodebase.exe
