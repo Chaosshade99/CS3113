@@ -162,13 +162,15 @@ public:
 	};
 	void Update(float elapsed) {	
 		timeAlive += elapsed;
-		if (timeAlive >= 1.5f) {
+		if (timeAlive >= 1.0f) {
 			dead = true;
 		}
 
 		float animationValue = mapValue(timeAlive, 5.0f, 10.0f, 0.0f, 1.0f);
 		modelMatrix = glm::mat4(1.0f);
-		size[0] = lerp(0.0, 2.5, timeAlive);		size[1] = lerp(0.0, 2.5, timeAlive);
+		size[0] = lerp(0.5, 3.0, timeAlive);
+		size[1] = lerp(0.5, 3.0, timeAlive);
+
 		ExplosionModelMatrix = glm::translate(modelMatrix, glm::vec3(position[0], position[1], position[2]));
 
 	};
@@ -254,6 +256,61 @@ void RenderExplosion(std::vector<Explosion> &explosion, ShaderProgram &p) {
 	}
 };
 
+//Background
+class Terrain {
+public:
+	Terrain(float &x, float &y) {
+		position = { x, y, 0.0 };
+		size = { 2.5, 2.5, 0.0 };
+
+		TerrainMatrix = glm::translate(modelMatrix, glm::vec3(position[0], position[1], position[2]));
+		sprite = LoadTexture(RESOURCE_FOLDER"terrainTile2.png");
+	}
+	void Render(ShaderProgram &p) {
+
+		program.SetModelMatrix(TerrainMatrix);
+		glBindTexture(GL_TEXTURE_2D, sprite);
+
+		float VerticesBody[] = {
+			(-size[0]), (-size[1]),
+			(size[0]), (-size[1]),
+			(size[0]), (size[1]),
+			(-size[0]), (-size[1]),
+			(size[0]), (size[1]),
+			(-size[0]), (size[1])
+		};
+
+		glVertexAttribPointer(p.positionAttribute, 2, GL_FLOAT, false, 0, VerticesBody);
+		glEnableVertexAttribArray(p.positionAttribute);
+
+		float bodyTexCoords[] = { 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0 };
+		glVertexAttribPointer(p.texCoordAttribute, 2, GL_FLOAT, false, 0, bodyTexCoords);
+		glEnableVertexAttribArray(p.texCoordAttribute);
+
+		glDrawArrays(GL_TRIANGLES, 0, 6);
+		glDisableVertexAttribArray(p.positionAttribute);
+		glDisableVertexAttribArray(p.texCoordAttribute);
+	}
+	
+
+	glm::mat4 TerrainMatrix;
+	GLuint sprite;
+
+	glm::vec3 position;
+	glm::vec3 size;
+
+};
+
+void InsertTerrain(std::vector<Terrain> &terrain, float x, float y) {
+	Terrain newTerrain(x, y);
+	terrain.push_back(newTerrain);
+};
+
+void RenderTerrain(std::vector<Terrain> &terrain, ShaderProgram &p) {
+	for (int i = 0; i < terrain.size(); i++) {
+		terrain[i].Render(p);
+	}
+};
 
 class Laser {
 public:
@@ -1412,7 +1469,7 @@ void ProcessInput(Player &player, std::vector<Laser> &shots) {
 }
 void ProcessMenu() {
 	const Uint8 *keys = SDL_GetKeyboardState(NULL);
-	if (keys[SDL_SCANCODE_RETURN]) {
+	if (keys[SDL_SCANCODE_SPACE]) {
 		// DO AN ACTION WHEN SPACE IS PRESSED!
 		mode = STATE_MENU1;
 	}
@@ -1448,13 +1505,13 @@ void RenderMenu() {
 
 	textMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-10.0f, -15.0f, 1.0f));
 	program.SetModelMatrix(textMatrix);
-	text = "Hold Enter to Start";
+	text = "Hold Space to Start";
 	DrawText(program, text, 2.0, -1.0);
 }
 
 void ProcessMenu1() {
 	const Uint8 *keys = SDL_GetKeyboardState(NULL);
-	if (keys[SDL_SCANCODE_SPACE]) {
+	if (keys[SDL_SCANCODE_RETURN]) {
 		// DO AN ACTION WHEN SPACE IS PRESSED!
 		mode = STATE_PREP1;
 	}
@@ -1486,13 +1543,13 @@ void RenderMenu1() {
 
 	textMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-10.0f, -15.0f, 1.0f));
 	program.SetModelMatrix(textMatrix);
-	text = "Hold Space to Start";
+	text = "Hold Enter to Start";
 	DrawText(program, text, 2.0, -1.0);
 }
 
 void ProcessMenu2() {
 	const Uint8 *keys = SDL_GetKeyboardState(NULL);
-	if (keys[SDL_SCANCODE_SPACE]) {
+	if (keys[SDL_SCANCODE_RETURN]) {
 		// DO AN ACTION WHEN SPACE IS PRESSED!
 		mode = STATE_PREP2;
 	}
@@ -1523,13 +1580,13 @@ void RenderMenu2() {
 
 	textMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-10.0f, -15.0f, 1.0f));
 	program.SetModelMatrix(textMatrix);
-	text = "Hold Space to Start";
+	text = "Hold Enter to Start";
 	DrawText(program, text, 2.0, -1.0);
 }
 
 void ProcessMenu3() {
 	const Uint8 *keys = SDL_GetKeyboardState(NULL);
-	if (keys[SDL_SCANCODE_SPACE]) {
+	if (keys[SDL_SCANCODE_RETURN]) {
 		// DO AN ACTION WHEN SPACE IS PRESSED!
 		mode = STATE_PREP3;
 	}
@@ -1560,7 +1617,7 @@ void RenderMenu3() {
 
 	textMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-10.0f, -15.0f, 1.0f));
 	program.SetModelMatrix(textMatrix);
-	text = "Hold Space to Start";
+	text = "Hold Enter to Start";
 	DrawText(program, text, 2.0, -1.0);
 }
 
@@ -1572,9 +1629,9 @@ void RenderVictory() {
 	std::string text = "You Win";
 	DrawText(program, text, 3.0, 0);
 
-	textMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-10.0f, -5.0f, 1.0f));
+	textMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-7.5f, -5.0f, 1.0f));
 	program.SetModelMatrix(textMatrix);
-	text = "Press Enter to exit.";
+	text = "Hold Enter to Exit";
 	DrawText(program, text, 2.0, -1.0);
 }
 
@@ -1586,9 +1643,9 @@ void RenderGameOver() {
 	std::string text = "Game Over";
 	DrawText(program, text, 3.0, 0);
 
-	textMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-10.0f, -5.0f, 1.0f));
+	textMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-7.5f, -5.0f, 1.0f));
 	program.SetModelMatrix(textMatrix);
-	text = "Press Enter to exit.";
+	text = "Hold Enter to Exit";
 	DrawText(program, text, 2.0, -1.0);
 }
 
@@ -1790,15 +1847,9 @@ public:
 		TankHitDetection();
 
 		UpdateEnemyTurrent(turrents, player, eshots, elapsed);
-		
-
-		if (player.hp <= 0) {
-			someSound = Mix_LoadWAV("Explosion.ogg");
-			Mix_PlayChannel(-1, someSound, 0);
-			mode = STATE_GAME_OVER;
-		}
 	}
 	void Render(ShaderProgram &p) {
+		RenderTerrain(terrain, p);
 		RenderExplosion(explode, p);
 		RenderWall(walls, p);
 		RenderLaser(shots, p);
@@ -1807,7 +1858,7 @@ public:
 		RenderEnemyTurrent(turrents, p);
 	}
 
-	
+	std::vector<Terrain> terrain;
 	std::vector<Explosion> explode;
 	std::vector<Wall> walls;
 	std::vector<Tank> tanks;
@@ -1850,6 +1901,9 @@ unsigned int Map1Data[MAP1_HEIGHT][MAP1_WIDTH] =
 void CreateMap1(Player &player, Level &level) {
 	for (int y = 0; y < MAP1_HEIGHT; y++) {
 		for (int x = 0; x < MAP1_WIDTH; x++) {
+
+			InsertTerrain(level.terrain, x * 5, y * 5);
+
 			if (Map1Data[y][x] != 0) {
 				if (Map1Data[y][x] == 1) {
 					spawnNewWall(level.walls, x * 5, y * 5);
@@ -1899,6 +1953,9 @@ unsigned int Map2Data[MAP2_HEIGHT][MAP2_WIDTH] =
 void CreateMap2(Player &player, Level &level) {
 	for (int y = 0; y < MAP2_HEIGHT; y++) {
 		for (int x = 0; x < MAP2_WIDTH; x++) {
+
+			InsertTerrain(level.terrain, x * 5, y * 5);
+
 			if (Map2Data[y][x] != 0) {
 				if (Map2Data[y][x] == 1) {
 					spawnNewWall(level.walls, x * 5, y * 5);
@@ -1954,6 +2011,9 @@ unsigned int Map3Data[MAP3_HEIGHT][MAP3_WIDTH] =
 void CreateMap3(Player &player, Level &level) {
 	for (int y = 0; y < MAP3_HEIGHT; y++) {
 		for (int x = 0; x < MAP3_WIDTH; x++) {
+
+			InsertTerrain(level.terrain, x * 5, y * 5);
+
 			if (Map3Data[y][x] != 0) {
 				if (Map3Data[y][x] == 1) {
 					spawnNewWall(level.walls, x * 5, y * 5);
@@ -2014,6 +2074,7 @@ int main(int argc, char *argv[]){
 	float accumulator = 0.0f;
 	mode = STATE_MENU;
 
+
 	Player player;
 	Level level1;
 	Level level2;
@@ -2022,9 +2083,8 @@ int main(int argc, char *argv[]){
 
 
 	Mix_Music *music;
-	music = Mix_LoadMUS("03_The_Final_Battle.ogg");
-	
-	
+	music = Mix_LoadMUS("Scene2.ogg");
+	Mix_PlayMusic(music, -1);
 
     SDL_Event event;
     bool done = false;
@@ -2063,7 +2123,16 @@ int main(int argc, char *argv[]){
 		glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
-		
+		if (player.hp <= 0 && mode != STATE_GAME_OVER) {
+			someSound = Mix_LoadWAV("Explosion.ogg");
+			Mix_PlayChannel(-1, someSound, 0);
+
+			Mix_HaltMusic();
+			someSound = Mix_LoadWAV("Gameover2.ogg");
+			Mix_PlayChannel(-1, someSound, 0);
+			mode = STATE_GAME_OVER;
+		}
+
 		switch (mode) {
 		case STATE_MENU:
 			ProcessMenu();
@@ -2074,7 +2143,9 @@ int main(int argc, char *argv[]){
 			RenderMenu1();
 			break;
 		case STATE_PREP1:
-			Mix_PlayMusic(music, -1);
+			music = Mix_LoadMUS("Battle4.ogg");
+			Mix_PlayMusic(music, -1);
+
 			CreateMap1(player, level1);
 			player.angle = 0;
 			player.turrentAngle = 0;
@@ -2084,6 +2155,9 @@ int main(int argc, char *argv[]){
 		case STATE_PLAY_LV1:
 			if (level1.turrents.empty() && level1.tanks.empty()) {
 				Mix_HaltMusic();
+				music = Mix_LoadMUS("Scene2.ogg");
+				Mix_PlayMusic(music, -1);
+
 				mode = STATE_MENU2;
 			}
 			ProcessInput(player, level1.shots);
@@ -2103,6 +2177,7 @@ int main(int argc, char *argv[]){
 			RenderMenu2();
 			break;
 		case STATE_PREP2:
+			music = Mix_LoadMUS("Battle8.ogg");
 			Mix_PlayMusic(music, -1);
 
 			CreateMap2(player, level2);
@@ -2120,6 +2195,9 @@ int main(int argc, char *argv[]){
 		case STATE_PLAY_LV2:
 			if (level2.turrents.empty() && level2.tanks.empty()) {
 				Mix_HaltMusic();
+				music = Mix_LoadMUS("Scene2.ogg");
+				Mix_PlayMusic(music, -1);
+
 				mode = STATE_MENU3;
 			}
 			ProcessInput(player, level2.shots);
