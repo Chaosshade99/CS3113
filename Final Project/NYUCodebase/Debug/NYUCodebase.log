@@ -1,99 +1,101 @@
 ﻿  main.cpp
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(94): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(137): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(248): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(254): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(310): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(325): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(95): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(138): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(249): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(255): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(311): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(326): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
           with
           [
               T=float
           ]
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(326): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(327): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
           with
           [
               T=float
           ]
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(495): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(505): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(500): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(501): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(503): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(575): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(570): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(571): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(573): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(728): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(723): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(724): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(726): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(877): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(889): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1003): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(998): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(999): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1001): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1228): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1251): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1257): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1375): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1381): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1411): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1416): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1659): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1660): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1666): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1686): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1702): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1703): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1712): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1713): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1732): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1748): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1767): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1782): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1799): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1818): warning C4018: '<': signed/unsigned mismatch
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1905): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1909): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1912): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1915): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1918): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(496): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(506): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(501): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(502): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(504): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(576): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(571): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(572): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(574): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(729): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(724): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(725): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(727): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(878): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(890): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1004): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(999): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1000): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1002): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1229): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1252): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1258): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1376): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1382): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1412): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1417): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1660): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1661): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1667): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1687): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1703): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1704): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1713): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1714): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1733): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1749): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1768): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1783): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1800): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1819): warning C4018: '<': signed/unsigned mismatch
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1906): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1910): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1913): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1916): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1919): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1919): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1920): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1957): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1961): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1964): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1967): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1970): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1958): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1962): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1965): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1968): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1971): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(1971): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(1972): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(2015): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(2019): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(2022): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(2025): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(2028): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(2016): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(2020): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(2023): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(2026): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(2029): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-c:\users\chaos_000\desktop\cs3113-1\project_template\windows\final project\nyucodebase\main.cpp(2029): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+c:\users\chaos_000\documents\github\cs3113\final project\nyucodebase\main.cpp(2030): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-  NYUCodebase.vcxproj -> C:\Users\chaos_000\Desktop\CS3113-1\project_template\Windows\Final Project\Debug\NYUCodebase.exe
+  ShaderProgram.cpp
+  Generating Code...
+  NYUCodebase.vcxproj -> C:\Users\chaos_000\Documents\GitHub\CS3113\Final Project\Debug\NYUCodebase.exe

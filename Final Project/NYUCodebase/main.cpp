@@ -86,6 +86,7 @@ GLuint LoadTexture(const char *filePath) {
 	stbi_image_free(image);
 	return retTexture;
 }
+
 void DrawText(ShaderProgram &p, std::string text, float size, float spacing) {
 	float character_size = 1.0 / 16.0f;
 	std::vector<float> vertexData;
